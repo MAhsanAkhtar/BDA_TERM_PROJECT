@@ -39,6 +39,7 @@ gcloud dataproc clusters create $CLUSTER_NAME \
         gs://dataproc-initialization-actions/jupyter/jupyter.sh \
     --bucket $BUCKET_NAME \
     --num-workers 2 \
-    --zone us-central1-a 
+    --zone us-central1-a \
+    --region us-west1 
     #--worker-machine-type=n1-highcpu-8 \
     #--master-machine-type=n1-highcpu-8
